@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fecha</h1>
+<p>La fecha actual en milisegundos es</p>
+
+<p id="demo"></p>
+
+<script>
+function setFunction() {
+    myVar = setInterval(dateFunc, 1000);
+}
+
+function dateFunc() {
+  var n = Date.now();
+    document.getElementById("demo").innerHTML = n;
+}
+setFunction();
+
+</script>
+
+</body>
+</html>
